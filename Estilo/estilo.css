@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    }
+
+    body { 
+    color:rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    background-color: #c3a38b;
+    }
+    
+    /*Aqui comienza el encabezado*/
+    .encabezado {
+    padding: 30px; 
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(60, 34, 5);
+    }
+    
+    /*Menu*/
+    .encabezado nav {
+        float: left;
+        border: 0;
+        background-color: #46372c;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .encabezado nav ul {
+        border: 0;
+        margin: 0;
+        list-style: none;
+        overflow: hidden;
+    }
+    
+    .encabezado nav ul li {
+        float: left;
+        font-family: Arial;
+        font-size: 20px;
+        border: 0;
+    
+    }
+    
+    .encabezado nav ul li a{
+        display: block;
+        padding: 20px;
+        color: rgb(221, 221, 221);
+        text-decoration: none;    
+    }
+    
+    .encabezado nav ul li a:hover {
+     background-color:#46372c;
+    }
+    
+    /*crearemos dos columnas una a la par de la otra*/
+    /*columna izquierda*/
+    .columnaizq{
+        float: left;
+        width: 60%;
+    } 
+    
+    /*columna derecha*/
+    .columnader{
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+    }
+    
+    /*Alinear a la izquierda*/
+    .seccion p {
+        text-align: left; 
+        margin: 0; 
+        padding: 0;
+    }
+
+    /*Esta es el fondo de la imagen*/
+    .fondoimg{
+        background-color: #46372c;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    /*Aquí estan los artículos*/
+    .articulo{
+        font-family: Arial;
+        background-color:  rgb(60, 34, 5);
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    /*Cambio de float a tabla*/
+    .fila:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    /*Pie de página*/
+    .pie{
+        padding: 20px;
+        text-align: center;
+        background-color: rgb(60, 34, 5);
+        margin-top: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    /*Cambia de fila a columnas*/
+    @media screen and (max-width: 800px) {
+        .columnaizq,
+        .columnader {
+            width: 100%;
+            padding: 0;
+        }
+    }
